@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>act 1 </title>
+</head>
+<body>
+    <h2></h2>
+    <button onclick="ascending()">ascending</button>
+    <button onclick="descending()">descending</button>
+    <p id="p1"></p>
+<P id="p2"></P>
+<p id="p3"></p>
+<script>
+    var num=[13,20,32,98,57]
+    document.getElementById("p1").innerHTML=num;
+    function ascending(){
+    num.sort(function(a,b){return a-b});
+    document.getElementById("p2").innerHTML= "Number in ascending order "+num;
+    
+ }
+ function descending(){
+    num.sort(function (a,b){return b-a});
+    document.getElementById("p3").innerHTML= "Numbers in descending order "+ num;
+ }
+ 
+</script>
+</body>
+</html>
